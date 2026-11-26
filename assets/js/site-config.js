@@ -3,7 +3,7 @@
    To open sales, set salesOpen to true. The checkout URL below is the live
    Polar checkout link for the product (created 25 Nov 2026). */
 window.NEROVIQUE_CONFIG = {
-  salesOpen: false,
+  salesOpen: true,
   products: {
     "ecommerce-conversion": {
       checkoutUrl: "https://buy.polar.sh/polar_cl_JZ0wuhR40mWg1V3njIMzENAClpZTswOwK9mdK3xacd7",
