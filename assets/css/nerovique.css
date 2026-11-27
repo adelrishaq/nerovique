@@ -284,7 +284,7 @@ body:has(#cookie-choices:not([hidden])) .buybar { display: none !important; }
 .cookie p:empty { display: none; }
 .cookie .cookie-actions { display: flex; gap: .6rem; flex-wrap: wrap; }
 .cookie button { min-height: 44px; padding: .6em 1.1em; border-radius: var(--radius); font: 600 var(--fs-sm)/1.2 var(--sans); cursor: pointer; border: 1px solid var(--forest); background: transparent; color: var(--ink); }
-.cookie button[data-choice="allow"] { background: var(--forest); color: var(--on-dark); }
+/* Both choices share one style so neither is nudged. */
 
 /* Responsive */
 @media (max-width: 960px) {
