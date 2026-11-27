@@ -22,16 +22,18 @@
 <meta name="twitter:image" content="https://adelrishaq.github.io/nerovique/assets/img/og-ecommerce-conversion.png">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 32 32%27%3E%3Crect width=%2732%27 height=%2732%27 rx=%276%27 fill=%27%23103e38%27/%3E%3Cpath d=%27M16 7l9 9-9 9-9-9z%27 fill=%27%23e8b98a%27/%3E%3C/svg%3E">
 <script>(function(d){var r=d.documentElement;if('IntersectionObserver' in window&&!(window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches)){r.classList.add('motion');setTimeout(function(){if(!r.classList.contains('motion-ready'))r.classList.remove('motion')},2500)}})(document)</script>
-<link rel="stylesheet" href="assets/css/nerovique.css">
-<link rel="stylesheet" href="assets/css/nerovique-v2.css">
+<link rel="preload" href="assets/fonts/instrument-serif.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/inter-var.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="assets/css/nv.css?v=20261127">
 <script defer src="assets/js/site-config.js?v=20261126"></script>
 <script defer src="assets/js/site.js"></script>
-<script defer src="assets/js/nerovique-v2.js"></script>
+<script defer src="assets/js/nv.js?v=20261127"></script>
 <script defer src="assets/js/pixel-config.js"></script>
 <script defer src="assets/js/consent.js"></script>
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
+<div class="progress" aria-hidden="true"></div>
 
 <header class="site-header">
   <div class="wrap bar">
@@ -51,23 +53,30 @@
   matches BUYER-LICENSE.pdf in the buyer download; change both together.
 -->
 
-<div class="wrap policy-layout">
-  <nav class="toc" aria-label="On this page">
-    <ol>
-      <li><a href="#seller">Seller &amp; billing</a></li>
-      <li><a href="#license">Buyer license</a></li>
-      <li><a href="#withdrawal">EU &amp; UK withdrawal</a></li>
-      <li><a href="#privacy">Privacy &amp; cookies</a></li>
-      <li><a href="#refunds">Refund requests</a></li>
-      <li><a href="#support">Support &amp; updates</a></li>
-    </ol>
-  </nav>
+<main id="main">
+  <div class="policy-hero">
+    <div class="rule-grid" aria-hidden="true"></div>
+    <div class="wrap">
+      <p class="eyebrow">Nerovique</p>
+      <h1 data-split>Policies and <em>support</em></h1>
+      <p class="notice" role="note">Last updated 27 November 2026.</p>
+    </div>
+  </div>
 
-  <main id="main" class="policy">
-    <p class="eyebrow">Nerovique</p>
-    <h1 style="font-size:var(--fs-h2)">Policies and support</h1>
-    <p class="notice" role="note">Last updated 27 November 2026.</p>
+  <div class="wrap policy-layout">
+    <nav class="toc" aria-label="On this page">
+      <p aria-hidden="true">On this page</p>
+      <ol>
+        <li><a href="#seller">Seller &amp; billing</a></li>
+        <li><a href="#license">Buyer license</a></li>
+        <li><a href="#withdrawal">EU &amp; UK withdrawal</a></li>
+        <li><a href="#privacy">Privacy &amp; cookies</a></li>
+        <li><a href="#refunds">Refund requests</a></li>
+        <li><a href="#support">Support &amp; updates</a></li>
+      </ol>
+    </nav>
 
+    <div class="policy">
     <section id="seller" aria-labelledby="seller-h">
       <h2 id="seller-h">Who sells the product and how billing works</h2>
       <p>The Science of E-commerce Conversion + AI Store Operator Toolkit is a digital download. USD 59.90, one-time purchase. When you buy through Polar Checkout, Polar Software, Inc. sells the product as merchant of record. Adel Rishaq, an individual operating as Nerovique, supplies the product and licenses its use under the Nerovique Buyer License. For help with the files, contact <a href="mailto:nerovique.support@gmail.com">nerovique.support@gmail.com</a>.</p>
@@ -112,20 +121,26 @@
       <p>Use <a href="mailto:nerovique.support@gmail.com">nerovique.support@gmail.com</a> for file access, a damaged download or a reproducible workbook or worksheet problem. Include the edition, file, device or browser, expected result and what you observed. A fictional example helps us reproduce a calculation issue.</p>
       <p>Support covers the supplied files. Store implementation, custom consulting and third-party AI platform support are not included. Support is provided by email in English.</p>
     </section>
-
-  </main>
-</div>
+      <div class="support-card">
+        <div><b>Need help with your files?</b><p>Include the edition, file and device so we can reproduce the problem.</p></div>
+        <a class="btn btn--light btn--sm" href="mailto:nerovique.support@gmail.com">Email support</a>
+      </div>
+    </div>
+  </div>
+</main>
 
 <footer class="site-footer">
   <div class="wrap">
     <div class="grid">
       <div>
         <a class="wordmark" href="index.html">Nerovique</a>
-        <p style="margin-top:.8rem;max-width:26rem">Practical guides and digital tools for decisions you can check.</p>
+        <p class="tag">Practical guides and digital tools for decisions you can check.</p>
       </div>
       <div>
         <h2>Library</h2>
-        <ul><li><a href="books/ecommerce-conversion/index.html">The Science of E-commerce Conversion</a></li></ul>
+        <ul>
+          <li><a href="books/ecommerce-conversion/index.html">The Science of E-commerce Conversion</a></li>
+        </ul>
       </div>
       <div>
         <h2>Help</h2>
@@ -135,6 +150,7 @@
         </ul>
       </div>
     </div>
+    <p class="footer-mark" aria-hidden="true">Nerovique</p>
     <div class="legal"><span>© Nerovique</span><a href="#main">Back to top ↑</a></div>
   </div>
 </footer>
