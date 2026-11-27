@@ -22,16 +22,18 @@
 <meta name="twitter:image" content="https://adelrishaq.github.io/nerovique/assets/img/og-ecommerce-conversion.png">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 32 32%27%3E%3Crect width=%2732%27 height=%2732%27 rx=%276%27 fill=%27%23103e38%27/%3E%3Cpath d=%27M16 7l9 9-9 9-9-9z%27 fill=%27%23e8b98a%27/%3E%3C/svg%3E">
 <script>(function(d){var r=d.documentElement;if('IntersectionObserver' in window&&!(window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches)){r.classList.add('motion');setTimeout(function(){if(!r.classList.contains('motion-ready'))r.classList.remove('motion')},2500)}})(document)</script>
-<link rel="stylesheet" href="assets/css/nerovique.css">
-<link rel="stylesheet" href="assets/css/nerovique-v2.css">
+<link rel="preload" href="assets/fonts/instrument-serif.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/inter-var.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="assets/css/nv.css?v=20261127">
 <script defer src="assets/js/site-config.js?v=20261126"></script>
 <script defer src="assets/js/site.js"></script>
-<script defer src="assets/js/nerovique-v2.js"></script>
+<script defer src="assets/js/nv.js?v=20261127"></script>
 <script defer src="assets/js/pixel-config.js"></script>
 <script defer src="assets/js/consent.js"></script>
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
+<div class="progress" aria-hidden="true"></div>
 
 <header class="site-header">
   <div class="wrap bar">
@@ -45,30 +47,69 @@
 </header>
 
 <main id="main">
-  <section class="wrap home-hero" aria-labelledby="home-title">
-    <p class="eyebrow">Nerovique · Guides &amp; tools</p>
-    <h1 id="home-title">Practical guides and digital tools, <em>built for action.</em></h1>
-    <p class="lead">Nerovique publishes practical guides and digital tools for specific decisions. Each title lists what it covers, what it includes and what it cannot promise.</p>
-    <div class="actions" style="justify-content:center">
-      <a class="btn" href="#library">Browse the library <span class="arrow" aria-hidden="true">→</span></a>
+  <section class="home-hero" aria-labelledby="home-title">
+    <div class="aurora" aria-hidden="true"></div>
+    <div class="rule-grid" aria-hidden="true"></div>
+    <div class="wrap">
+      <p class="eyebrow">Nerovique · Guides &amp; tools</p>
+      <h1 id="home-title" data-split>Practical guides and digital tools, <em>built for action.</em></h1>
+      <p class="lead" data-reveal>Nerovique publishes practical guides and digital tools for specific decisions. Each title lists what it covers, what it includes and what it cannot promise.</p>
+      <div class="actions" data-reveal>
+        <a class="btn" href="#library">Browse the library <span class="arrow" aria-hidden="true">→</span></a>
+        <a class="btn btn--ghost" href="books/ecommerce-conversion/index.html">Read about the first title</a>
+      </div>
+      <ul class="hero-meta" data-reveal aria-label="Publishing principles">
+        <li>Formats listed before you buy</li>
+        <li>Worked examples you can check</li>
+        <li>No promised results</li>
+      </ul>
     </div>
   </section>
 
-  <section class="wrap" id="library" aria-labelledby="library-title" style="padding-bottom: var(--s7)">
+  <section class="wrap" aria-labelledby="feature-title">
+    <article class="feature" data-tilt-area data-reveal>
+      <div class="rule-grid" aria-hidden="true"></div>
+      <div>
+        <p class="eyebrow">Featured title · E-commerce</p>
+        <h2 id="feature-title">The Science of <em>E‑commerce</em> Conversion</h2>
+        <p>A field guide for store owners: help a shopper compare two products, check the fit and understand the final price, then decide what evidence would justify changing your store.</p>
+        <ul class="spec">
+          <li><b>9</b>Chapters</li>
+          <li><b>6</b>Worksheets</li>
+          <li><b>5</b>AI skills</li>
+        </ul>
+        <div class="price-line"><b>USD 59.90</b><span>One-time purchase · Digital download</span></div>
+        <div class="actions">
+          <a class="btn btn--light" href="books/ecommerce-conversion/index.html">Explore the book <span class="arrow" aria-hidden="true">→</span></a>
+          <a class="btn btn--ghost-dark" href="books/ecommerce-conversion/index.html#samples">Sample pages</a>
+        </div>
+      </div>
+      <div class="book3d" aria-hidden="true">
+        <div class="glow"></div>
+        <div class="book">
+          <div class="face front"><img src="assets/img/cover-560.webp" srcset="assets/img/cover-360.webp 360w, assets/img/cover-560.webp 560w, assets/img/cover-800.webp 800w" sizes="(max-width: 860px) 62vw, 330px" width="560" height="747" decoding="async" alt=""></div>
+          <div class="spine"></div><div class="pages"></div><div class="face back"></div>
+        </div>
+        <div class="floor"></div>
+      </div>
+    </article>
+  </section>
+
+  <section class="wrap section" id="library" aria-labelledby="library-title">
     <div class="head" data-reveal>
       <p class="eyebrow">The library</p>
       <h2 id="library-title">Titles</h2>
     </div>
-    <!-- Subject filter: built by nerovique-v2.js from each card's data-category; stays hidden until two subjects exist -->
+    <!-- Subject filter: built by nv.js from each card's data-category; stays hidden until two subjects exist -->
     <ul class="shelf-filter" aria-label="Filter by subject" hidden></ul>
     <div class="shelf" data-reveal-group>
       <!-- PRODUCT CARD: copy this block for each new title -->
       <article class="card" data-accent="copper" data-category="E-commerce">
         <div class="card-media">
-          <img src="assets/img/cover-360.webp" srcset="assets/img/cover-360.webp 360w, assets/img/cover-560.webp 560w" sizes="(max-width: 720px) 60vw, 220px" width="360" height="480" loading="lazy" decoding="async" alt="Cover of The Science of E-commerce Conversion">
+          <img src="assets/img/cover-360.webp" srcset="assets/img/cover-360.webp 360w, assets/img/cover-560.webp 560w" sizes="(max-width: 720px) 45vw, 180px" width="360" height="480" loading="lazy" decoding="async" alt="Cover of The Science of E-commerce Conversion">
         </div>
         <div class="card-body">
-          <p class="eyebrow" style="margin:0">E-commerce · Book &amp; toolkit</p>
+          <p class="eyebrow plain">E-commerce · Book &amp; toolkit</p>
           <h3><a href="books/ecommerce-conversion/index.html">The Science of E‑commerce Conversion</a></h3>
           <p>Nine chapters, a printable workbook, six offline worksheets and five AI skills for store owners.</p>
           <div class="meta"><span>Digital download</span><b>USD 59.90</b></div>
@@ -77,7 +118,7 @@
       <!-- /PRODUCT CARD -->
 
       <article class="card card--placeholder" aria-label="Upcoming titles">
-        <p class="eyebrow">In preparation</p>
+        <p class="eyebrow plain">In preparation</p>
         <h3>More titles</h3>
         <p>Further guides and tools are in preparation. Each will list exactly what it includes before you buy.</p>
       </article>
@@ -85,15 +126,16 @@
   </section>
 
   <section class="dark section" id="approach" aria-labelledby="approach-title">
+    <div class="grain" aria-hidden="true"></div>
     <div class="wrap">
       <div class="head" data-reveal>
         <p class="eyebrow">What to expect</p>
-        <h2 id="approach-title">How Nerovique titles are made</h2>
+        <h2 id="approach-title">How Nerovique titles <em>are made</em></h2>
       </div>
       <div class="principles" data-reveal-group>
-        <div><h3>Made to be used</h3><p>Titles are built around a task you can complete, with material you can work through and check.</p></div>
-        <div><h3>Clear about what’s included</h3><p>Formats, page counts and files are listed before you buy.</p></div>
-        <div><h3>Evidence over promises</h3><p>Worked examples you can check by hand. No title promises a business result.</p></div>
+        <div><span class="num" aria-hidden="true">01</span><h3>Made to be used</h3><p>Titles are built around a task you can complete, with material you can work through and check.</p></div>
+        <div><span class="num" aria-hidden="true">02</span><h3>Clear about what’s included</h3><p>Formats, page counts and files are listed before you buy.</p></div>
+        <div><span class="num" aria-hidden="true">03</span><h3>Evidence over promises</h3><p>Worked examples you can check by hand. No title promises a business result.</p></div>
       </div>
     </div>
   </section>
@@ -104,11 +146,13 @@
     <div class="grid">
       <div>
         <a class="wordmark" href="index.html">Nerovique</a>
-        <p style="margin-top:.8rem;max-width:26rem">Practical guides and digital tools for decisions you can check.</p>
+        <p class="tag">Practical guides and digital tools for decisions you can check.</p>
       </div>
       <div>
         <h2>Library</h2>
-        <ul><li><a href="books/ecommerce-conversion/index.html">The Science of E-commerce Conversion</a></li></ul>
+        <ul>
+          <li><a href="books/ecommerce-conversion/index.html">The Science of E-commerce Conversion</a></li>
+        </ul>
       </div>
       <div>
         <h2>Help</h2>
@@ -119,6 +163,7 @@
         </ul>
       </div>
     </div>
+    <p class="footer-mark" aria-hidden="true">Nerovique</p>
     <div class="legal"><span>© Nerovique</span><a href="#main">Back to top ↑</a></div>
   </div>
 </footer>
